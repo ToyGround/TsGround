@@ -27,7 +27,15 @@ const person2: { name: string, age: number } = {
 let isSHow: boolean = true
 
 // TS 함수_파라미터 정의
-const sum = (a:number, b:number) => a + b;
+const sum = (a: number, b: number) => a + b;
 
 // TS 함수_리턴 정의
-const add = (a:number, b:number):number => a + b;
+const add = (a: number, b: number): number => a + b;
+
+// JS 함수의 파라미터 갯수 제한
+const sumJs = (a, b) => a + b;
+sumJs(1, 2, 3, 4, 5)
+
+// TS 함수의 파라미터 갯수 제한
+const sumTs = (a: number, b: number): number => a + b
+sumTs(1, 2, 3, 4, 5)
